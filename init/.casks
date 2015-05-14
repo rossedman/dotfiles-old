@@ -22,6 +22,10 @@ echo "Installing SourceTree"
 cask sourcetree
 
 echo ""
+echo "Installing Code"
+cask coda
+
+echo ""
 echo "Installing PHPStorm"
 cask phpstorm
 
@@ -50,16 +54,30 @@ echo "Installing The Unarchiver"
 cask the-unarchiver
 
 echo ""
-echo "Install Caffeine"
+echo "Installing Caffeine"
 cask caffeine
 
 echo ""
-echo "Install iTerm2"
+echo "Installing iTerm2"
 cask iterm2
 
 echo ""
-echo "Install Spotify"
+echo "Installing Spotify"
 cask spotify
+
+echo ""
+echo "Installing Kindle"
+cask kindle
+
+echo ""
+echo "Installing Sketch"
+cask sketch
+cask sketch-toolbox
+
+echo ""
+echo "Installing Omnigraffle & Omnifocus"
+cask omnigraffle
+cask omnifocus
 
 echo ""
 echo "Cleaning up installation files..."

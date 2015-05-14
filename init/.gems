@@ -34,6 +34,7 @@ installgem middleman
 installgem capistrano
 installgem github-pages
 installgem rails
+installgem travis
 
 echo ""
 echo "Cleaning up..."
