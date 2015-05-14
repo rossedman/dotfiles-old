@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+if [ ! -d "$HOME/Sites" ]; then
+  mkdir ~/Sites
+fi
+
+if [ ! -d "$HOME/Sites/Github" ]; then
+  mkdir ~/Sites/Github
+fi
+
+if [ ! -d "$HOME/Sites/Apps" ]; then
+  mkdir ~/Sites/Apps
+fi
+
+if [ ! -d "$HOME/Sites/Packages" ]; then
+  mkdir ~/Sites/Packages
+fi
+
+if [ ! -d "$HOME/Sites/Ruby" ]; then
+  mkdir ~/Sites/Ruby
+fi

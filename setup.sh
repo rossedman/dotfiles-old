@@ -2,6 +2,7 @@
 
 ./init/.osx
 ./init/.fonts
+./init/.dir
 ./init/.casks
 ./init/.subl
 ./init/.atom
