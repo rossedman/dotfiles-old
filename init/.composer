@@ -19,4 +19,3 @@ composer global require phpspec/phpspec
 composer global require behat/behat
 composer global require "laravel/installer=~1.1"
 composer global require "laravel/homestead=~2.0"
-composer global update
