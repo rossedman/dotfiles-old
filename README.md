@@ -18,4 +18,10 @@ sh ~/.dotfiles/bootstrap.sh
 
 # run full install!
 sh ~/.dotfiles/setup.sh
+
+# run update
+sh ~/.dotfiles/update.sh
+
+# run only a specific file
+sh ~/.dotfiles/init/.homestead
 ```
