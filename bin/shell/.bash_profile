@@ -11,9 +11,3 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Composer Path
-export PATH="~/.composer/vendor/bin"
