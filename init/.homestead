@@ -17,13 +17,6 @@ vagrant box add laravel/homestead
 vagrant box add scotch/box
 sleep 1
 
-echo ""
-if ! composer -v > /dev/null 2>&1; then
-  echo "Installing composer"
-  curl -sS https://getcomposer.org/installer | php
-  mv composer.phar /usr/local/bin/composer
-fi
-
 if [ ! -d "$HOME/.homestead" ]; then
   echo ""
   echo "Installing Homestead"
@@ -32,8 +25,4 @@ if [ ! -d "$HOME/.homestead" ]; then
   echo "Copying Homestead Preferences"
   cp -RfXv $DOT/bin/homestead/after.sh $HOME/.homestead/after.sh
   cp -RfXv $DOT/bin/homestead/aliases $HOME/.homestead/aliases
-else
-  echo ""
-  echo "Updating Homestead"
-  cd $HOME/.homestead && git pull origin
 fi

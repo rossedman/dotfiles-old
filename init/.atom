@@ -24,10 +24,10 @@ ATOMCSS="$HOME/.atom/styles.less"
 
 cat <<EOM >$ATOMCONF
 'editor':
-  'fontFamily': 'Ubuntu Mono'
-  'fontSize': 14
+  'fontFamily': 'Menlo'
+  'fontSize': 13
   'scrollPastEnd': true
-  'lineHeight': 1.5
+  'lineHeight': 1.8
   'invisibles': {}
   'showIndentGuide': true
 'core':
