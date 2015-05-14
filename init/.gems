@@ -23,13 +23,15 @@ installgem compass
 installgem bourbon
 installgem neat
 installgem bitters
+installgem foundation
+installgem guard
+installgem guard-sass
 installgem jekyll
 installgem middleman
 installgem capistrano
-installgem foundation
 installgem github-pages
 installgem rails
 
 echo ""
 echo "Cleaning up..."
-gem cleanup
+sudo gem cleanup
