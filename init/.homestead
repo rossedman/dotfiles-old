@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+DOT="$HOME/.dotfiles"
+
+echo ""
+echo "Installing VirtualBox"
+brew cask install virtualbox
+
+echo ""
+echo "Installing Vagrant"
+brew cask install vagrant
+brew cask cleanup
+
+echo ""
+echo "Download Base Boxes"
+vagrant box add laravel/homestead
+vagrant box add scotch/box
+sleep 1
+
+echo ""
+if ! composer -v > /dev/null 2>&1; then
+  echo "Installing composer"
+  curl -sS https://getcomposer.org/installer | php
+  mv composer.phar /usr/local/bin/composer
+fi
+
+if [ ! -d "$HOME/.homestead" ]; then
+  echo ""
+  echo "Installing Homestead"
+  composer global require "laravel/homestead=~2.0"
+  homestead init
+  echo "Copying Homestead Preferences"
+  cp -RfXv $DOT/bin/homestead/after.sh $HOME/.homestead/after.sh
+  cp -RfXv $DOT/bin/homestead/aliases $HOME/.homestead/aliases
+else
+  echo ""
+  echo "Updating Homestead"
+  cd $HOME/.homestead && git pull origin
+fi

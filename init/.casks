@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+function cask() {
+  if brew cask info "${@}" | grep "Not installed" > /dev/null; then
+    brew cask install "${@}"
+  else
+    echo "${@} is already installed."
+  fi
+}
+
+
+echo ""
+echo "Installing Github"
+cask github
+
+echo ""
+echo "Installing Tower"
+cask tower
+
+echo ""
+echo "Installing SourceTree"
+cask sourcetree
+
+echo ""
+echo "Installing PHPStorm"
+cask phpstorm
+
+echo ""
+echo "Installing RubyMine"
+cask rubymine
+
+echo ""
+echo "Installing Sequel Pro"
+cask sequel-pro
+
+echo ""
+echo "Installing Google Chrome"
+cask google-chrome
+
+echo ""
+echo "Installing Heroku Toolbelt"
+cask heroku-toolbelt
+
+echo ""
+echo "Installing Kaleidoscope"
+cask kaleidoscope
+
+echo ""
+echo "Installing The Unarchiver"
+cask the-unarchiver
+
+echo ""
+echo "Install Caffeine"
+cask caffeine
+
+echo ""
+echo "Install iTerm2"
+cask iterm2
+
+echo ""
+echo "Install Spotify"
+cask spotify
+
+echo ""
+echo "Cleaning up installation files..."
+brew cask cleanup
