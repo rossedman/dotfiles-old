@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Initializing .gemrc"
+cp -RfXv $DOT/bin/shell/.gemrc $HOME/.gemrc
+
 echo ""
 echo "Updating Ruby Gems"
 gem update --system
