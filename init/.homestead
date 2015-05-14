@@ -2,6 +2,10 @@
 
 DOT="$HOME/.dotfiles"
 
+# echo ""
+# echo "Shutdown All VMs"
+# vboxmanage list runningvms | sed -r 's/.*\{(.*)\}/\1/' | xargs -L1 -I {} VBoxManage controlvm {} savestate
+
 echo ""
 echo "Installing VirtualBox"
 brew cask install virtualbox
