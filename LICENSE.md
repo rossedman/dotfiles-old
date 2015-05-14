@@ -1,4 +1,4 @@
-Copyright 2014 &copy; Pongstr Ordillo. MIT License.
+Copyright 2014 &copy; Ross Edman. MIT License.
 ===================================================
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
