@@ -10,7 +10,7 @@ gem update --system
 function installgem () {
   if ! gem spec "${@}" > /dev/null 2>&1; then
     echo "Installing ${@}..."
-    gem install "${@}"
+    sudo gem install "${@}"
   else
     echo "${@} is already installed"
   fi
@@ -33,4 +33,3 @@ installgem rails
 echo ""
 echo "Cleaning up..."
 gem cleanup
-
