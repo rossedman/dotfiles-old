@@ -8,4 +8,4 @@ then
   brew cask install vagrant
 fi
 
-vagrant box add laravel/homestead
+# vagrant box add laravel/homestead
