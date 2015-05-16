@@ -14,7 +14,10 @@ chmod a+x /usr/local/bin/symfony
 # Install Gems
 gem install bundler
 gem install capistrano
+gem install jekyll
+gem install middleman
 gem install guard
+gem install guard-sass
 gem install sass
 gem install bourbon
 gem install neat
