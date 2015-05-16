@@ -9,6 +9,8 @@ fi
 
 apm install spacegray-dark-ui
 apm install base16-ocean-dark
+apm install paraiso-dark
+apm install base16-syntax
 apm install jshint
 apm install angularjs
 apm install emmet

@@ -7,7 +7,7 @@
 export ZSH=$HOME/.dotfiles
 
 # Set OS X defaults
-$ZSH/osx/set-defaults.sh
+$ZSHDOT/osx/set-defaults.sh
 
 # Run installers
 $HOME/.dotfiles/script/install
