@@ -15,6 +15,7 @@ packages=(
 'phpspec/phpspec=*'
 'behat/behat=*'
 'drush/drush=dev-master'
+'wp-cli/wp-cli=dev-master'
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
 'laravel/installer=~1.1'
