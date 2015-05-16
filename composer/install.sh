@@ -11,12 +11,12 @@ fi
 $HOME/.dotfiles/bin/composer self-update
 
 packages=(
-'phpunit/phpunit=3.7.*'
+'phpunit/phpunit=*'
 'phpspec/phpspec=*'
 'behat/behat=*'
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
-'laravel/installer=~1.1',
+'laravel/installer=~1.1'
 'laravel/homestead=~2.0'
 )
 
