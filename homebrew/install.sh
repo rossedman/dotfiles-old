@@ -33,6 +33,7 @@ packages=(
 'node'
 'php55'
 'php55-mcrypt'
+'zsh'
 )
 
 for package in ${packages[@]} ; do

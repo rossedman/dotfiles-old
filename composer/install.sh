@@ -19,6 +19,7 @@ packages=(
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
 'laravel/installer=~1.1'
+'laravel/lumen-installer=~1.0'
 'laravel/homestead=~2.0'
 )
 
