@@ -1,0 +1,5 @@
+init.author.email = "ross.edman@gmail.com"
+init.author.name = "Ross Edman"
+init.author.url = "http://rossedman.com"
+init.license = "MIT"
+prefix = ~/.node

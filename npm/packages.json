@@ -1,0 +1,23 @@
+{
+  "name": "dotfiles",
+  "version": "0.0.0",
+  "description": "Globally installed packages for my dotfiles",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rossedman/dotfiles.git"
+  },
+  "author": "Ross Edman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rossedman/dotfiles/issues"
+  },
+  "homepage": "https://github.com/thomaswelton/dotfiles",
+  "dependencies": {
+    "bower": "~1.3.0",
+    "coffee-script": "~1.7.1",
+    "grunt-cli": "~0.1.13",
+    "gulp": "~3.5.2",
+    "jslint": "~0.2.11",
+    "less": "~1.6.3"
+  }
+}
