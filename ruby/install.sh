@@ -28,3 +28,4 @@ travis
 )
 
 sudo gem install ${gems[@]}
+sudo gem cleanup
