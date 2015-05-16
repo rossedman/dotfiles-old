@@ -64,7 +64,7 @@ programs=(
 )
 
 for program in ${programs[@]} ; do
-  brew cask install $program --force
+  brew cask install $program
 done
 
 brew cask cleanup
