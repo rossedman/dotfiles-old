@@ -8,8 +8,7 @@ fi
 
 source ~/.rvm/scripts/rvm
 
-rvm install ruby-2.0.0-p451
-rvm use ruby-2.0.0-p451 --default
+rvm install ruby-2.0.0-p481
 
 gems=(
 bundler
@@ -28,4 +27,4 @@ rails
 travis
 )
 
-gem install ${gems[@]}
+sudo gem install ${gems[@]}
