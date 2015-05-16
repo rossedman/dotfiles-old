@@ -43,7 +43,6 @@ programs=(
 'virtualbox'
 'vagrant'
 'atom'
-'coda'
 'phpstorm'
 'rubymine'
 'github'
@@ -65,7 +64,7 @@ programs=(
 )
 
 for program in ${programs[@]} ; do
-  brew cask install $program
+  brew cask install $program --force
 done
 
 brew cask cleanup
