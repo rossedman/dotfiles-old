@@ -34,6 +34,8 @@ packages=(
 'php55'
 'php55-mcrypt'
 'zsh'
+'docker'
+'boot2docker'
 )
 
 for package in ${packages[@]} ; do
