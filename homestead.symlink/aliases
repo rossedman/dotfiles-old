@@ -6,6 +6,8 @@ alias c='clear'
 
 alias artisan='php artisan'
 
+export PATH=~/.composer/vendor/bin:$PATH
+
 function serve() {
   if [[ "$1" && "$2" ]]
   then
