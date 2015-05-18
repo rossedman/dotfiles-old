@@ -13,14 +13,6 @@ composer global require behat/behat
 curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
 chmod a+x /usr/local/bin/symfony
 
-# Install Gems
-sudo gem install bundler
-sudo gem install capistrano
-sudo gem install jekyll
-sudo gem install middleman
-sudo gem install guard
-sudo gem install guard-sass
-sudo gem install sass
-sudo gem install bourbon
-sudo gem install neat
-sudo gem install bitters
+# Install Ruby
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --ruby --with-default-gems="rails bundler capistrano guard sass bourbon neat bitters guard-sass jekyll middleman"
