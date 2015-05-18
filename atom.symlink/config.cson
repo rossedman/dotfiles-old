@@ -4,6 +4,7 @@
     fontFamily: "Menlo"
     fontSize: 13
     lineHeight: 1.7
+    softWrap: true
     invisibles:
       {}
   core:
@@ -35,3 +36,5 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
+  docblockr:
+    {}

@@ -16,5 +16,6 @@ apm install angularjs
 apm install emmet
 apm install seti-syntax
 apm install seti-ui
+apm install docblockr
 
 exit 0
