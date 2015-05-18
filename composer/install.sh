@@ -21,6 +21,7 @@ packages=(
 'laravel/installer=~1.1'
 'laravel/lumen-installer=~1.0'
 'laravel/homestead=~2.0'
+'laravel/envoy=~1.0'
 )
 
 for package in ${packages[@]} ; do
