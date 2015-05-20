@@ -39,6 +39,8 @@ colorize
 open-uri
 httparty
 t
+thor
+erb
 )
 
 sudo gem install ${gems[@]}

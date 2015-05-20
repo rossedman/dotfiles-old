@@ -1,0 +1,8 @@
+https://laravel-news.com/feed/
+https://laracasts.com/feed
+http://code.tutsplus.com/categories/php.atom
+http://code.tutsplus.com/categories/ruby.atom
+http://www.sitepoint.com/feed/
+http://feeds.wired.com/wired/index
+http://www.smashingmagazine.com/feed/
+https://robots.thoughtbot.com/feed

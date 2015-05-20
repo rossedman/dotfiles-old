@@ -1,0 +1,74 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+require 'colorize'
+require 'open-uri'
+require 'simple-rss'
+require 'erb'
+
+class RSS < Thor
+
+  desc "latest", "Get latest feed from favorite rss/atom sources"
+  def latest
+    load_feeds.each do |feed|
+      rss = SimpleRSS.parse open feed
+      puts "+".red * 160
+      puts "+ ".red + rss.channel.title.red
+      puts "+".red * 160
+      rss.entries.each do |entry|
+        puts entry.title.blue.on_red.uncolorize
+        puts entry.link.colorize(:light_blue).underline
+        puts "-"*160
+      end
+    end
+  end
+
+  desc "print", "Print the feed to an HTML file on the desktop to review later"
+  def print
+    @feeds = load_feeds.map do |feed|
+      feed = SimpleRSS.parse open feed
+    end
+
+    output = ERB.new(load_template, nil, "%")
+
+    file = output.result(get_binding)
+
+    puts file
+  end
+
+  private
+    def load_feeds
+      File.readlines(Dir.pwd + '/data.symlink/feeds.txt')
+    end
+
+    def get_binding
+      binding
+    end
+
+    def load_template
+      template = %q{
+        <html>
+        <head>
+          <meta charset="utf-8">
+          <title>Latest News</title>
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        </head>
+        <body>
+          <div class="container">
+            <% feeds.each do |feed| %>
+              <div class="page-header"><h1><%= feed.channel.title %></h1></div>
+              <% feed.entries.each do |entry| %>
+                * <%= entry.title %> * <a href="<%= entry.link %>" class="btn btn-sm btn-info float-right" target="_blank">Go!</a>
+                <hr>
+              <% end %>
+            <% end %>
+          </div>
+        </body>
+        </html>
+      }.gsub(/^  /, '')
+
+      return template
+    end
+end
+
+RSS.start
