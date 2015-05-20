@@ -7,13 +7,16 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Install ruby managers
 brew install ruby-install
 brew install chruby
 
+# Install versions of ruby
 ruby-install ruby 1.9
 ruby-install ruby 2.1
 ruby-install ruby 2.2.1
 
+# Gems for development
 gems=(
 bundler
 compass
@@ -33,4 +36,16 @@ rake
 )
 
 sudo gem install ${gems[@]}
+sudo gem cleanup
+
+# These are gems for global rake tasks
+rakes=(
+rake
+json
+simple-rss
+colorize
+open-uri
+)
+
+sudo gem install ${rakes[@]}
 sudo gem cleanup
