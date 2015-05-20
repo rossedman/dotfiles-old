@@ -1,14 +1,16 @@
 #!/bin/sh
 
-if ! [ "$(type -t rvm)" = "file" ]
+# Check for Homebrew
+if test ! $(which brew)
 then
-  echo "  Installing rvm for you."
-  \curl -sSL https://get.rvm.io | bash -s stable --ignore-dotfiles > /tmp/rvm-install.log
+  echo "  Installing Homebrew for you."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-source ~/.rvm/scripts/rvm
+brew install ruby-install
+brew install chruby
 
-rvm install ruby-2.0.0-p481
+ruby-install ruby 2.2
 
 gems=(
 bundler
