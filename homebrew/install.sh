@@ -52,6 +52,7 @@ programs=(
 'tower'
 'sourcetree'
 'sequel-pro'
+'sqlprosqlite'
 'google-chrome'
 'heroku-toolbelt'
 'kaleidoscope'
