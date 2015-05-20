@@ -10,7 +10,9 @@ fi
 brew install ruby-install
 brew install chruby
 
-ruby-install ruby 2.2
+ruby-install ruby 1.9
+ruby-install ruby 2.1
+ruby-install ruby 2.2.1
 
 gems=(
 bundler
