@@ -29,6 +29,7 @@ capistrano
 github-pages
 rails
 travis
+rake
 )
 
 sudo gem install ${gems[@]}
