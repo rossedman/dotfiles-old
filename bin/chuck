@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'colorize'
+require 'httparty'
+require 'json'
+
+response = HTTParty.get("http://api.icndb.com/jokes/random")
+json = JSON.parse(response.body)
+
+puts json['value']['joke'].encode("iso-8859-1").force_encoding("utf-8").red

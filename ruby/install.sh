@@ -33,19 +33,13 @@ github-pages
 rails
 travis
 rake
-)
-
-sudo gem install ${gems[@]}
-sudo gem cleanup
-
-# These are gems for global rake tasks
-rakes=(
-rake
 json
 simple-rss
 colorize
 open-uri
+httparty
+t
 )
 
-sudo gem install ${rakes[@]}
+sudo gem install ${gems[@]}
 sudo gem cleanup
