@@ -48,6 +48,7 @@ programs=(
 'atom'
 'phpstorm'
 'rubymine'
+'sublime-text3'
 'github'
 'tower'
 'sourcetree'

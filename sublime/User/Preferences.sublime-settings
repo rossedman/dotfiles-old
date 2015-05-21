@@ -1,0 +1,21 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
+	"font_face": "Menlo",
+	"font_size": 14,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"LESS",
+		"Vintage",
+		"Laravel Blade Highlighter"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"use_simple_full_screen": true
+}

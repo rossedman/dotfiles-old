@@ -1,0 +1,10 @@
+{
+	"tab-size": 2,
+	"extensions":
+	[
+		"Vagrantfile",
+		"Customfile",
+    "Gemfile",
+    "Capfile"
+	]
+}
