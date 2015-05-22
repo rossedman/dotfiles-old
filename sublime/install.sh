@@ -1,4 +1,3 @@
-#!/bin/sh
 # Setup a machine for Sublime Text 3
 set -x
 

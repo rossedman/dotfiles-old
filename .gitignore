@@ -5,7 +5,11 @@ atom.symlink/compile-cache/
 atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
-
 git/gitconfig.symlink
-
 npm/node_modules
+sublime/User/
+homestead.symlink/Homestead.yaml
+!sublime/User/Distraction Free.sublime-settings
+!sublime/User/Package Control.sublime-settings
+!sublime/User/Preferences.sublime-settings
+!sublime/User/Ruby.sublime-settings
