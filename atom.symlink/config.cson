@@ -3,7 +3,7 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     fontSize: 13
-    lineHeight: 1.7
+    lineHeight: 2
     softWrap: true
     invisibles:
       {}

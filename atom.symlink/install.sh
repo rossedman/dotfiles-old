@@ -17,5 +17,6 @@ apm install emmet
 apm install seti-syntax
 apm install seti-ui
 apm install docblockr
+apm install ruby-slim
 
 exit 0
