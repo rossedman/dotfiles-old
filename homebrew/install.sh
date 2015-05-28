@@ -16,6 +16,7 @@ fi
 
 repos=(
 'josegonzalez/homebrew-php'
+'thoughtbot/formulae'
 )
 
 for repo in ${repos[@]} ; do
@@ -36,6 +37,8 @@ packages=(
 'zsh'
 'docker'
 'boot2docker'
+'gitsh'
+'tig'
 )
 
 for package in ${packages[@]} ; do
