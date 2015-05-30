@@ -18,5 +18,6 @@ apm install seti-syntax
 apm install seti-ui
 apm install docblockr
 apm install ruby-slim
+apm install language-docker
 
 exit 0
