@@ -6,6 +6,8 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 git/gitconfig.symlink
+ansible.symlinks/hosts
+ansible.symlinks/cp
 npm/node_modules
 sublime/User/
 homestead.symlink/Homestead.yaml
