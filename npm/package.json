@@ -18,6 +18,9 @@
     "grunt-cli": "~0.1.13",
     "gulp": "~3.5.2",
     "jslint": "~0.2.11",
-    "less": "~1.6.3"
+    "less": "~1.6.3",
+    "express-generator": "*",
+    "sails": "~0.10",
+    "nodemon": "~1.3"
   }
 }

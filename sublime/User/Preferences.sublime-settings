@@ -6,11 +6,11 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Pretty JSON",
-		"SideBarEnhancements",
+		"Laravel Blade Highlighter",
 		"LESS",
+		"SideBarEnhancements",
 		"Vintage",
-		"Laravel Blade Highlighter"
+		"Pretty JSON"
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,

@@ -67,6 +67,7 @@ programs=(
 'sketch-toolbox'
 'omnifocus'
 'omnigraffle'
+'terraform'
 )
 
 for program in ${programs[@]} ; do
