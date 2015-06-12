@@ -4,10 +4,12 @@
 	],
 	"installed_packages":
 	[
+		"Color Highlighter",
 		"Dayle Rees Color Schemes",
 		"DocBlockr",
 		"Emmet",
 		"Package Control",
+		"Phpcs",
 		"Sass",
 		"SCSS",
 		"Theme - Spacegray",
