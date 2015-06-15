@@ -23,6 +23,8 @@ for repo in ${repos[@]} ; do
   brew tap $repo
 done
 
+brew tap caskroom/versions
+
 packages=(
 'caskroom/cask/brew-cask'
 'grc'
