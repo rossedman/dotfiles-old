@@ -37,6 +37,7 @@ packages=(
 'zsh'
 'gitsh'
 'tig'
+'wget'
 )
 
 for package in ${packages[@]} ; do
