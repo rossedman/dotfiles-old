@@ -9,10 +9,6 @@ composer global require phpspec/phpspec
 composer global require phpunit/phpunit
 composer global require behat/behat
 
-# Install Symfony Installer
-curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony
-chmod a+x /usr/local/bin/symfony
-
 # Install Ruby
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable --ruby --with-default-gems="rails bundler capistrano guard sass bourbon neat bitters guard-sass jekyll middleman"

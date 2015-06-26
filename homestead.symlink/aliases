@@ -5,6 +5,9 @@ alias h='cd ~'
 alias c='clear'
 
 alias artisan='php artisan'
+alias phpunit='vendor/bin/phpunit'
+alias behat='vendor/bin/behat'
+alias phpspec='vendor/bin/phpspec'
 
 export PATH=~/.composer/vendor/bin:$PATH
 

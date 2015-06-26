@@ -24,6 +24,7 @@ for repo in ${repos[@]} ; do
 done
 
 packages=(
+'wget'
 'caskroom/cask/brew-cask'
 'grc'
 'coreutils'
@@ -32,11 +33,14 @@ packages=(
 'git-flow'
 'git-extras'
 'node'
-'php55'
+'postgres'
+'sqlite'
+'php55 -with-apache --with-mysql --with-pgsql --with-intl --with-sqlite'
 'php55-mcrypt'
 'zsh'
 'gitsh'
 'tig'
+'ant'
 )
 
 for package in ${packages[@]} ; do
