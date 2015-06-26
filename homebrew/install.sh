@@ -23,6 +23,8 @@ for repo in ${repos[@]} ; do
   brew tap $repo
 done
 
+brew tap caskroom/versions
+
 packages=(
 'wget'
 'caskroom/cask/brew-cask'
