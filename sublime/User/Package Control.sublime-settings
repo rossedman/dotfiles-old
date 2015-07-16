@@ -4,15 +4,21 @@
 	],
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"Color Highlighter",
 		"Dayle Rees Color Schemes",
 		"DocBlockr",
 		"Emmet",
+		"GitGutter",
+		"LESS",
+		"Material Theme",
 		"Package Control",
+		"PHP Companion",
 		"Phpcs",
 		"Sass",
 		"SCSS",
 		"Theme - Spacegray",
+		"Vintageous",
 		"WordPress"
 	]
 }

@@ -17,6 +17,8 @@ fi
 repos=(
 'josegonzalez/homebrew-php'
 'thoughtbot/formulae'
+'homebrew/dupes'
+'homebrew/apache'
 )
 
 for repo in ${repos[@]} ; do
@@ -37,12 +39,14 @@ packages=(
 'node'
 'postgres'
 'sqlite'
-'php55 -with-apache --with-mysql --with-pgsql --with-intl --with-sqlite'
-'php55-mcrypt'
+'php56 --with-apache --with-mysql --with-pgsql --with-intl --with-sqlite'
+'php56-mcrypt'
+'php56-xdebug'
 'zsh'
 'gitsh'
 'tig'
 'ant'
+'aspell'
 )
 
 for package in ${packages[@]} ; do

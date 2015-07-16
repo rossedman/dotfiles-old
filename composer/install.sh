@@ -14,14 +14,13 @@ packages=(
 'phpunit/phpunit=*'
 'phpspec/phpspec=*'
 'behat/behat=*'
-'drush/drush=dev-master'
-'wp-cli/wp-cli=dev-master'
 'squizlabs/php_codesniffer=*'
 'phpdocumentor/phpdocumentor=2.*'
 'laravel/installer=~1.1'
 'laravel/lumen-installer=~1.0'
 'laravel/homestead=~2.0'
 'laravel/envoy=~1.0'
+'kherge/box=*'
 )
 
 for package in ${packages[@]} ; do
