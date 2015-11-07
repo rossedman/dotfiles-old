@@ -15,7 +15,6 @@ else
 fi
 
 repos=(
-'josegonzalez/homebrew-php'
 'thoughtbot/formulae'
 )
 
@@ -24,7 +23,6 @@ for repo in ${repos[@]} ; do
 done
 
 packages=(
-'caskroom/cask/brew-cask'
 'grc'
 'coreutils'
 'spark'
@@ -32,8 +30,6 @@ packages=(
 'git-flow'
 'git-extras'
 'node'
-'php55'
-'php55-mcrypt'
 'zsh'
 'gitsh'
 'tig'
@@ -42,39 +38,5 @@ packages=(
 for package in ${packages[@]} ; do
   brew install $package
 done
-
-programs=(
-'virtualbox'
-'vagrant'
-'atom'
-'phpstorm'
-'rubymine'
-'sublime-text3'
-'github'
-'tower'
-'sourcetree'
-'sequel-pro'
-'psequel'
-'sqlprosqlite'
-'google-chrome'
-'heroku-toolbelt'
-'kaleidoscope'
-'the-unarchiver'
-'caffeine'
-'iterm2'
-'spotify'
-'kindle'
-'sketch'
-'sketch-toolbox'
-'omnifocus'
-'omnigraffle'
-'terraform'
-)
-
-for program in ${programs[@]} ; do
-  brew cask install $program
-done
-
-brew cask cleanup
 
 exit 0
