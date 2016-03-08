@@ -12,10 +12,18 @@ brew install ruby-install
 brew install chruby
 
 # Install versions of ruby
-echo "  Insalling ruby versions."
-ruby-install ruby 1.9
-ruby-install ruby 2.1
-ruby-install ruby 2.2.1
+versions=(
+'2.1.8'
+'2.2.4'
+'2.3.0'
+)
+
+for version in ${versions[@]}; do
+  if [ -f ! "$HOME/src/$version"]; then
+    echo "  Installing Ruby version $version"
+    ruby-install ruby $version
+  fi
+done
 
 # Gems for development
 gems=(
@@ -44,6 +52,6 @@ thor
 erb
 )
 
-echo " Installing gems."
+echo " Installing gems"
 sudo gem install ${gems[@]}
 sudo gem cleanup
