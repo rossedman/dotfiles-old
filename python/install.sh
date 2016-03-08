@@ -5,6 +5,8 @@ brew install python
 if test ! $(which pip)
 then
   brew install pip
+else
+  pip install --upgrade pip
 fi
 
 packages=(
@@ -17,7 +19,7 @@ packages=(
 'Jinja2'
 )
 
-for packge in ${packages[@]} ; do
+for package in ${packages[@]} ; do
   echo "  Installing Python libraries"
   pip install $package
 done

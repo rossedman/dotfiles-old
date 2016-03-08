@@ -19,7 +19,7 @@ versions=(
 )
 
 for version in ${versions[@]}; do
-  if [ -f ! "$HOME/src/$version"]; then
+  if [ ! -f "$HOME/src/ruby-$version" ]; then
     echo "  Installing Ruby version $version"
     ruby-install ruby $version
   fi
@@ -52,6 +52,10 @@ thor
 erb
 )
 
-echo " Installing gems"
-sudo gem install ${gems[@]}
+for gem in ${gems[@]}; do
+  if [ ! $(gem list -i $gem) ]; then
+    gem install $gem
+  fi
+done
+
 sudo gem cleanup
