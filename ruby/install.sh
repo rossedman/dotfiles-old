@@ -12,6 +12,7 @@ brew install ruby-install
 brew install chruby
 
 # Install versions of ruby
+echo "  Insalling ruby versions."
 ruby-install ruby 1.9
 ruby-install ruby 2.1
 ruby-install ruby 2.2.1
@@ -43,5 +44,6 @@ thor
 erb
 )
 
+echo " Installing gems."
 sudo gem install ${gems[@]}
 sudo gem cleanup

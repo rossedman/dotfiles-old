@@ -18,33 +18,21 @@ repos=(
 'thoughtbot/formulae'
 'homebrew/dupes'
 'homebrew/apache'
+'homebrew/versions'
+'homebrew/homebrew-php'
 )
 
 for repo in ${repos[@]} ; do
   brew tap $repo
 done
 
-brew tap caskroom/versions
-
 packages=(
+'ansible'
+'packer'
+'terraform'
 'wget'
-'grc'
 'coreutils'
-'spark'
-'git'
-'git-flow'
-'git-extras'
-'node'
-'postgres'
-'sqlite'
-'php56 --with-apache --with-mysql --with-pgsql --with-intl --with-sqlite'
-'php56-mcrypt'
-'php56-xdebug'
 'zsh'
-'gitsh'
-'tig'
-'ant'
-'aspell'
 )
 
 for package in ${packages[@]} ; do

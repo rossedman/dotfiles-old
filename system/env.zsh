@@ -1,1 +1,1 @@
-export EDITOR='sublime'
+export EDITOR='atom'
