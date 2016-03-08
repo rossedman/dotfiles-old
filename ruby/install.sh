@@ -19,7 +19,7 @@ versions=(
 )
 
 for version in ${versions[@]}; do
-  if [ ! -f "$HOME/src/ruby-$version" ]; then
+  if [ ! -d "$HOME/src/ruby-$version" ]; then
     echo "  Installing Ruby version $version"
     ruby-install ruby $version
   fi
