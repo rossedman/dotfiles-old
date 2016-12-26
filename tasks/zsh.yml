@@ -9,3 +9,8 @@
   template:
     src: zshrc.j2
     dest: /Users/{{ansible_user_id}}/.zshrc
+
+- name: install aliases file 
+  copy:
+    src: aliases 
+    dest: /Users/{{ansible_user_id}}/.aliases

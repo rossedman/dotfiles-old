@@ -1,0 +1,45 @@
+---
+
+- name: is docker running 
+  shell: "ps -ax | grep '/Applications/Docker.app/Contents/MacOS/Docker' | grep -v 'tty'"
+  register: is_docker_running
+  ignore_errors: True
+
+- debug: msg="{{is_docker_running}}"
+
+- name: open docker
+  command: "open -a Docker"
+  when: 
+    - is_docker_running.failed is defined 
+    - is_docker_running.failed
+
+- name: wait for docker to start
+  pause: seconds=15
+  when: 
+    - is_docker_running.failed is defined 
+    - is_docker_running.failed
+
+- name: install docker images 
+  docker_image:
+    name: "{{ item }}"
+  with_items:
+    - "centos:7"
+    - "ubuntu:trusty"
+    - "ubuntu:xenial"
+    - "alpine:latest"
+    - "node:latest"
+    - "node:alpine" 
+    - "openjdk:latest"
+    - "openjdk:alpine"
+    - "python:2"
+    - "python:2-alpine" 
+    - "python:latest" 
+    - "python:3-alpine" 
+    - "ruby:latest"
+    - "ruby:alpine"
+    - "php:latest" 
+    - "php:alpine"
+    - "cgswong/aws:latest"
+    - "pahud/aws-shell"
+    - "hashicorp/packer:latest"
+    - "hashicorp/terraform:latest"

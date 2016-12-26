@@ -4,6 +4,8 @@
     src: gitignore 
     dest: /Users/{{ansible_user_id}}/.gitignore 
 
+# TODO: eventually make properties available through this module
+# @link http://docs.ansible.com/ansible/git_config_module.html
 - name: install global gitconfig 
   template:
     src: gitconfig.j2

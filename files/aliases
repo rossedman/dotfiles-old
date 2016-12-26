@@ -1,0 +1,25 @@
+#
+# Container Kill 
+#
+# Checking if container already exist with the same name 
+# If it does, lets remove it and boot another one. 
+#
+# TODO: change this to a restart instead of a fresh container 
+#
+container_kill () {
+    OUTPUT=$(docker ps -a | grep -a $1)
+    if [ $OUTPUT ]; then 
+        docker rm -f $1 >> /dev/null 
+    fi
+}
+
+#
+# Worlflow Aliases 
+#
+# These aliases will provide a simple way to work with common tools 
+# but will prevent system from getting bloated. 
+#
+alias aws="container_kill aws-cli; docker run -v $HOME/.aws::/root/.aws --name aws-cli cgswong/aws:latest aws"
+alias aws-shell="container_kill aws-shell; docker run -v $HOME/.aws:/root/.aws -it --name aws-shell pahud/aws-shell:latest"
+alias terraform="container_kill terraform; docker -v .:/data --name terraform hashicorp/terraform:latest"
+alias packer="container_kill packer; docker -v .:/data --name packer hasicorp/packer:latest"
