@@ -1,0 +1,15 @@
+---
+- name: create aws directory 
+  file:
+    path: /Users/{{ansible_user_id}}/.aws
+    state: directory 
+    
+- name: install aws creds
+  template:
+    src: aws-credentials.j2
+    dest: /Users/{{ansible_user_id}}/.aws/credentials
+
+- name: install aws config 
+  copy:
+    src: aws-config 
+    dest: /Users/{{ansible_user_id}}/.aws/config

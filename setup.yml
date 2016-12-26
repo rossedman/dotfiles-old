@@ -1,0 +1,20 @@
+---
+- hosts: 127.0.0.1
+  vars_files:
+    - vars/general.yml
+    - vars/secrets.yml
+  tasks:
+    - include: tasks/brew.yml
+    - include: tasks/general.yml
+    - include: tasks/zsh.yml
+    - include: tasks/aws.yml
+
+    #
+    # TODO: 
+    #   - Build docker containers for python, npm, node, etc
+    #   - Set aliases for using containers 
+    #   - Install configuration files 
+    #   - Install ZSH aliases 
+    #   - Write update/cleanup playbooks
+    #   - Write aliases to run all playbooks 
+    #

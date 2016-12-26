@@ -1,0 +1,45 @@
+---
+- name: brew update & upgrade
+  homebrew: update_homebrew=yes upgrade_all=yes
+
+- name: brew taps 
+  homebrew_tap: name={{item}} state=present 
+  with_items:
+    - caskroom/cask 
+    - homebrew/core 
+    - homebrew/services
+    - homebrew/versions
+    - pivotal/tap 
+
+- name: brew cask
+  homebrew_cask: name={{item}} state=present 
+  with_items:
+    - caffeine
+    - dash 
+    - docker
+    - hipchat 
+    - eclipse-java
+    - intellij-idea
+    - iterm2
+    - java
+    - moom
+    - sequel-pro
+    - slack
+    - spotify
+    - sts
+    - visual-studio-code
+    - wireshark
+    - xmind
+
+- name: brew install
+  homebrew: name={{item}} state=present
+  with_items:
+    - coreutils
+    - docker-clean
+    - git 
+    - git-extras
+    - jq
+    - m-cli
+    - maven
+    - wget
+    - zsh

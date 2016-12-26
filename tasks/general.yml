@@ -1,0 +1,15 @@
+---
+- name: install global gitignore 
+  copy:
+    src: gitignore 
+    dest: /Users/{{ansible_user_id}}/.gitignore 
+
+- name: install global gitconfig 
+  template:
+    src: gitconfig.j2
+    dest: /Users/{{ansible_user_id}}/.gitconfig
+
+- name: install gemrc 
+  copy: 
+    src: gitignore 
+    dest: /Users/{{ansible_user_id}}/.gemrc

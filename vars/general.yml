@@ -1,0 +1,16 @@
+zsh_theme: robbyrussell
+zsh_plugins:
+  - git 
+  - brew 
+  - brew-cask 
+  - docker 
+  - git-extras 
+  - github 
+  - grunt 
+  - mvn 
+  - npm 
+  - osx 
+  - pip 
+  - python 
+  - ssh-agent 
+  - vagrant

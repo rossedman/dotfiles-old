@@ -10,6 +10,13 @@ Run this:
 
 ```sh
 git clone https://github.com/rossedman/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-script/bootstrap
+
+./bootstrap.sh 
+
+cat "$PASSWORD" > ~/.vault_pass.txt 
+
+ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+
+ansible-playbook setup.yml --vault-password-file ~/.vault_pass.txt
 ```
+
