@@ -15,3 +15,8 @@
   copy: 
     src: gitignore 
     dest: /Users/{{ansible_user_id}}/.gemrc
+
+- name: install hyper terminal config 
+  template:
+    src: hyper.j2 
+    dest: /Users/{{ansible_user_id}}/.hyper.js
