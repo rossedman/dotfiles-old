@@ -1,5 +1,4 @@
 ---
-
 - name: is docker running 
   shell: "ps -ax | grep '/Applications/Docker.app/Contents/MacOS/Docker' | grep -v 'tty'"
   register: is_docker_running
