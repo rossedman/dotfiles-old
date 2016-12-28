@@ -30,8 +30,8 @@ alias packer="container_kill packer; docker -v $(pwd):/data --name packer hasico
 
 # Node / Javascript
 alias bower="container_kill bower; docker -v $(pwd):/data --name bower digitallyseamless/nodejs-bower-grunt bower"
-alias npm="container_kill npm; docker run -v $(pwd):/data --name npm --rm digitallyseamless/nodejs-bower-grunt npm"
-alias grunt="container_kill grunt; docker run -v $(pwd):/data --name grunt --rm digitallyseamless/nodejs-bower-grunt grunt"
+alias npm="container_kill npm; docker run -v $(pwd):/data --name npm digitallyseamless/nodejs-bower-grunt npm"
+alias grunt="container_kill grunt; docker run -v $(pwd):/data --name grunt digitallyseamless/nodejs-bower-grunt grunt"
 
 # Microsoft 
 alias azure="container_kill azure; docker run -it --name azure microsoft/azure-cli:latest"

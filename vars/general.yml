@@ -33,6 +33,7 @@ brew_packages:
   - jq
   - m-cli
   - maven
+  - pwgen
   - wget
   - zsh
 
@@ -79,9 +80,19 @@ zsh_plugins:
   - ssh-agent 
   - vagrant
 
-hyper_font_size: 14px
+hyper_font_size: 12px
 hyper_cursor: BLOCK
 hyper_padding: "20px 20px"
 hyper_plugins:
   - hyperlink
   - hyperterm-material
+
+vscode_extensions:
+  - "christian-kohler.npm-intellisense"
+  - "donjayamanne.python"
+  - "magicstack.MagicPython"
+  - "mohsen1.prettify-json"
+  - "ms-vscode.PowerShell"
+  - "ms-vscode.csharp"
+  - "PeterJausovec.vscode-docker"
+  - "robertohuertasm.vscode-icons"

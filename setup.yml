@@ -9,3 +9,4 @@
     - include: tasks/zsh.yml
     - include: tasks/aws.yml
     - include: tasks/docker.yml
+    - include: tasks/vscode.yml
