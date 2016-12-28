@@ -1,11 +1,2 @@
-git/gitconfig.symlink
-ansible.symlink/hosts
-ansible.symlink/cp
-npm/node_modules
-sublime/User/
-homestead.symlink/Homestead.yaml
-!sublime/User/Distraction Free.sublime-settings
-!sublime/User/Package Control.sublime-settings
-!sublime/User/Preferences.sublime-settings
-!sublime/User/Ruby.sublime-settings
-zsh/tokens.zsh
+.DS_Store
+*.retry
