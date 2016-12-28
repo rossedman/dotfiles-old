@@ -43,3 +43,7 @@
     - "pahud/aws-shell"
     - "hashicorp/packer:latest"
     - "hashicorp/terraform:latest"
+    - "microsoft/azure-cli"
+    - "microsoft/dotnet"
+    - "microsoft/powershell"
+    - "digitallyseamless/nodejs-bower-grunt"
