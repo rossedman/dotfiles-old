@@ -1,0 +1,78 @@
+brew_taps:
+  - caskroom/cask 
+  - homebrew/core 
+  - homebrew/services
+  - homebrew/versions
+  - pivotal/tap 
+
+brew_cask_programs:
+  - caffeine
+  - dash 
+  - docker
+  - hipchat 
+  - eclipse-java
+  - intellij-idea
+  - iterm2
+  - java
+  - moom
+  - sequel-pro
+  - slack
+  - spotify
+  - sts
+  - visual-studio-code
+  - wireshark
+  - xmind
+
+brew_packages:
+  - coreutils
+  - docker-clean
+  - git 
+  - git-extras
+  - jq
+  - m-cli
+  - maven
+  - wget
+  - zsh
+
+docker_containers:
+  - "centos:7"
+  - "ubuntu:trusty"
+  - "ubuntu:xenial"
+  - "alpine:latest"
+  - "node:latest"
+  - "node:alpine" 
+  - "openjdk:latest"
+  - "openjdk:alpine"
+  - "python:2"
+  - "python:2-alpine" 
+  - "python:latest" 
+  - "python:3-alpine" 
+  - "ruby:latest"
+  - "ruby:alpine"
+  - "php:latest" 
+  - "php:alpine"
+  - "cgswong/aws:latest"
+  - "pahud/aws-shell"
+  - "hashicorp/packer:latest"
+  - "hashicorp/terraform:latest"
+  - "microsoft/azure-cli"
+  - "microsoft/dotnet"
+  - "microsoft/powershell"
+  - "digitallyseamless/nodejs-bower-grunt"
+
+zsh_theme: robbyrussell
+zsh_plugins:
+  - git 
+  - brew 
+  - brew-cask 
+  - docker 
+  - git-extras 
+  - github 
+  - grunt 
+  - mvn 
+  - npm 
+  - osx 
+  - pip 
+  - python 
+  - ssh-agent 
+  - vagrant

@@ -1,0 +1,16 @@
+---
+- name: clone oh-my-zsh
+  git: 
+    repo: https://github.com/robbyrussell/oh-my-zsh.git 
+    dest: /Users/{{ansible_user_id}}/.oh-my-zsh 
+    depth: 1
+
+- name: install zshrc
+  template:
+    src: zshrc.j2
+    dest: /Users/{{ansible_user_id}}/.zshrc
+
+- name: install aliases file 
+  copy:
+    src: aliases 
+    dest: /Users/{{ansible_user_id}}/.aliases

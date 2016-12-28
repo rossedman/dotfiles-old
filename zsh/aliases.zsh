@@ -1,8 +1,0 @@
-alias reload!='. ~/.zshrc'
-alias hosts='sudo vim /private/etc/hosts'
-alias pkg='composer install && bundle install && npm install && bower install'
-alias do_info='curl -X GET "https://api.digitalocean.com/v2/account/keys" -H "Authorization: Bearer $DO_TOKEN"'
-export SSH_FINGERPRINT=$(ssh-keygen -lf ~/.ssh/id_rsa.pub | awk '{print $2}')
-
-alias showHidden='defaults write com.apple.finder AppleShowAllFiles YES'
-alias hideHidden='defaults write com.apple.finder AppleShowAllFiles NO'

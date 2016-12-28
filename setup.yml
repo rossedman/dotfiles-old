@@ -1,0 +1,11 @@
+---
+- hosts: 127.0.0.1
+  vars_files:
+    - vars/general.yml
+    - vars/secrets.yml
+  tasks:
+    - include: tasks/brew.yml
+    - include: tasks/general.yml
+    - include: tasks/zsh.yml
+    - include: tasks/aws.yml
+    - include: tasks/docker.yml
