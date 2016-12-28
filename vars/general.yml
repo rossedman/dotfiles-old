@@ -12,6 +12,7 @@ brew_cask_programs:
   - hipchat 
   - eclipse-java
   - intellij-idea
+  - insomnia
   - iterm2
   - java
   - moom
@@ -19,6 +20,7 @@ brew_cask_programs:
   - slack
   - spotify
   - sts
+  - timestamp
   - visual-studio-code
   - wireshark
   - xmind
@@ -76,3 +78,10 @@ zsh_plugins:
   - python 
   - ssh-agent 
   - vagrant
+
+hyper_font_size: 14px
+hyper_cursor: BLOCK
+hyper_padding: "20px 20px"
+hyper_plugins:
+  - hyperlink
+  - hyperterm-material
