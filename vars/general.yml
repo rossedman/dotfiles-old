@@ -96,3 +96,6 @@ vscode_extensions:
   - "ms-vscode.csharp"
   - "PeterJausovec.vscode-docker"
   - "robertohuertasm.vscode-icons"
+
+python_packages:
+  - pylint
