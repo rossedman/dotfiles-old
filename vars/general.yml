@@ -26,14 +26,18 @@ brew_cask_programs:
   - xmind
 
 brew_packages:
+  - awscli
   - coreutils
   - docker-clean
   - git 
   - git-extras
+  - googler
   - jq
   - m-cli
   - maven
+  - packer
   - pwgen
+  - terraform
   - wget
   - zsh
 
@@ -54,14 +58,9 @@ docker_containers:
   - "ruby:alpine"
   - "php:latest" 
   - "php:alpine"
-  - "cgswong/aws:latest"
-  - "pahud/aws-shell"
-  - "hashicorp/packer:latest"
-  - "hashicorp/terraform:latest"
   - "microsoft/azure-cli"
   - "microsoft/dotnet"
   - "microsoft/powershell"
-  - "digitallyseamless/nodejs-bower-grunt"
 
 zsh_theme: robbyrussell
 zsh_plugins:
@@ -79,13 +78,6 @@ zsh_plugins:
   - python 
   - ssh-agent 
   - vagrant
-
-hyper_font_size: 12px
-hyper_cursor: BLOCK
-hyper_padding: "20px 20px"
-hyper_plugins:
-  - hyperlink
-  - hyperterm-material
 
 vscode_extensions:
   - "christian-kohler.npm-intellisense"
