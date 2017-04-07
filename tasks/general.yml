@@ -1,27 +1,21 @@
 ---
-- name: install global gitignore 
+- name: install global gitignore
   copy:
-    src: gitignore 
-    dest: /Users/{{ansible_user_id}}/.gitignore 
+    src: gitignore
+    dest: /Users/{{ansible_user_id}}/.gitignore
 
 # TODO: eventually make properties available through this module
 # @link http://docs.ansible.com/ansible/git_config_module.html
-- name: install global gitconfig 
+- name: install global gitconfig
   template:
     src: gitconfig.j2
     dest: /Users/{{ansible_user_id}}/.gitconfig
 
-- name: install gemrc 
-  copy: 
-    src: gitignore 
+- name: install gemrc
+  copy:
+    src: gitignore
     dest: /Users/{{ansible_user_id}}/.gemrc
 
-- name: install hyper terminal config 
-  template:
-    src: hyper.j2 
-    dest: /Users/{{ansible_user_id}}/.hyper.js
-
-- name: install pip packages 
+- name: install pip packages
   pip: name="{{item}}"
-  with_items:
-    - pylint
+  with_items: "{{python_packages}}"

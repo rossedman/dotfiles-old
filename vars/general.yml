@@ -1,15 +1,16 @@
 brew_taps:
-  - caskroom/cask 
-  - homebrew/core 
+  - caskroom/cask
+  - homebrew/core
   - homebrew/services
   - homebrew/versions
-  - pivotal/tap 
+  - pivotal/tap
 
 brew_cask_programs:
+  - atom
   - caffeine
-  - dash 
+  - dash
   - docker
-  - hipchat 
+  - hipchat
   - eclipse-java
   - intellij-idea
   - insomnia
@@ -20,20 +21,28 @@ brew_cask_programs:
   - slack
   - spotify
   - sts
-  - timestamp
-  - visual-studio-code
   - wireshark
-  - xmind
 
 brew_packages:
+  - ansible
+  - awscli
+  - aws-shell
   - coreutils
   - docker-clean
-  - git 
+  - git
   - git-extras
+  - go
+  - googler
   - jq
+  - kops
+  - kubernetes-cli
+  - kubernetes-helm
   - m-cli
   - maven
+  - node
+  - packer
   - pwgen
+  - terraform
   - wget
   - zsh
 
@@ -42,60 +51,27 @@ docker_containers:
   - "ubuntu:trusty"
   - "ubuntu:xenial"
   - "alpine:latest"
-  - "node:latest"
-  - "node:alpine" 
-  - "openjdk:latest"
-  - "openjdk:alpine"
-  - "python:2"
-  - "python:2-alpine" 
-  - "python:latest" 
-  - "python:3-alpine" 
-  - "ruby:latest"
-  - "ruby:alpine"
-  - "php:latest" 
-  - "php:alpine"
-  - "cgswong/aws:latest"
-  - "pahud/aws-shell"
-  - "hashicorp/packer:latest"
-  - "hashicorp/terraform:latest"
-  - "microsoft/azure-cli"
-  - "microsoft/dotnet"
-  - "microsoft/powershell"
-  - "digitallyseamless/nodejs-bower-grunt"
 
 zsh_theme: robbyrussell
 zsh_plugins:
-  - git 
-  - brew 
-  - brew-cask 
-  - docker 
-  - git-extras 
-  - github 
-  - grunt 
-  - mvn 
-  - npm 
-  - osx 
-  - pip 
-  - python 
-  - ssh-agent 
+  - git
+  - brew
+  - brew-cask
+  - docker
+  - git-extras
+  - github
+  - grunt
+  - mvn
+  - npm
+  - osx
+  - pip
+  - python
+  - ssh-agent
   - vagrant
 
-hyper_font_size: 12px
-hyper_cursor: BLOCK
-hyper_padding: "20px 20px"
-hyper_plugins:
-  - hyperlink
-  - hyperterm-material
-
-vscode_extensions:
-  - "christian-kohler.npm-intellisense"
-  - "donjayamanne.python"
-  - "magicstack.MagicPython"
-  - "mohsen1.prettify-json"
-  - "ms-vscode.PowerShell"
-  - "ms-vscode.csharp"
-  - "PeterJausovec.vscode-docker"
-  - "robertohuertasm.vscode-icons"
-
 python_packages:
+  - bumpversion
+  - coverage
   - pylint
+  - pytest
+  - pytest-cov
